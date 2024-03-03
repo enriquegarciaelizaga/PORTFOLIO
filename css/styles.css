@@ -1,0 +1,349 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+   *, *::before, *::after {
+    box-sizing: inherit;
+}
+body{
+    background-image: url(../imagen/pexels-todd-trapani-2276928.jpg);
+    background-size: cover;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1;
+    padding: 2rem;
+    
+}
+.logo{
+    max-width: 150px;
+}
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.Navegacion{
+    display: flex;
+    flex-direction:column;
+    margin-top: 4.2rem;
+    text-align: center;
+    
+}
+.abrir-menu, .cerrar-menu{
+    display: none;
+
+}
+
+@media screen and (max-width:550px){
+
+    .abrir-menu, .cerrar-menu{
+        display: block;
+        border: 0;
+        font-size: 1.5rem;
+        
+    }
+    
+    .Navegacion{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2rem;
+        
+        
+    }
+    .Navegacion.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+    .nav-list a {
+        color: blueviolet;
+    }
+}
+.Navegacion a{
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: inline;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 1rem;
+}
+.Navegacion a:hover{
+    background-color:rgb(119, 0, 255);
+    color:rgb(251, 251, 251);
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+@media(min-width:768){
+    .container2{ 
+        flex-direction:row;
+    }
+}
+img{
+    max-width: 100%;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-left: 5rem;
+}
+.section1{
+    padding-top: 1rem;
+}
+.container h1{
+    color: rgb(68, 68, 229);
+}
+.section1 p{
+    font-size: 1.5rem;
+}
+span{
+    color: rgb(26, 26, 89);
+}
+
+button:hover{
+    background-color: rgb(187, 158, 215);
+    cursor: pointer;
+}
+
+@media (min-width:768px){
+
+     button{
+        width:auto;
+    }
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(20, 47, 224);
+    padding: 50px;
+    justify-content: space-around;
+}
+@media (min-width:550px){
+
+    .skills{
+        display: flex;
+        flex-direction: row;
+    }
+}
+.skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20rem;
+    
+}
+@media (min-width:550px){
+
+    .skill{
+        display: flex;
+        flex-direction: row;
+    }
+}    
+.skills h3{
+    padding-left: 0.9rem;
+    color: black;
+}
+.skills svg{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0,0, .2);
+    border-radius: 10px;
+}
+.skills svg:hover{
+    filter: blur(2px);
+}
+.skills svg:hover{
+    transform: translateY(-20px) scale(1.05);
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0, .4);
+    filter:none;
+}
+.redes{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 95px;
+    gap:1rem;
+} 
+.redes svg{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0,0, .2);
+}
+.redes svg:hover{
+    filter: blur(2px);
+}
+.redes svg:hover{
+    transform: translateY(-20px) scale(1.05);
+    box-shadow: 0 5px 5px 0 rgba(0, 0,0, .4);
+    filter:none;
+}
+
+
+.proyectos h2{
+    font-size: 20px;
+    color: rgb(61, 1, 118);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.swiper{
+    width: 100%;
+}
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+}
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    
+}
+@media(max-width:991px){
+    .proyectos{
+        padding: 30px;
+    }
+}
+.github{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20rem;   
+}
+/* CONTACTO */
+.centrar-texto{
+    text-align: center;
+}
+.contacto-bg {
+    background-image: url(../imagen/pexels-pixabay-257923.jpg);
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+
+.formulario {
+    gap: 1rem;
+    margin: -4rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+.campo__field {
+    flex: 1;
+    border: 1px solid rgb(132, 132, 132);
+}
+.campo__field--textarea {
+    height: 20rem;
+}
+.boton {
+    display: block;
+    margin-left: 9rem;
+    color: white;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+.boton--primario {
+   
+    background-color:rgb(7, 5, 5);
+    color:rgb(249, 245, 245);
+    padding: 1rem 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    font-weight: bold;
+    border: none;
+    width: 90%;
+    max-width: 200px;
+}
+.boton--primario:hover{
+    background-color: rgb(187, 158, 215);
+    cursor: pointer;
+}
+.cv{
+    background-color:blueviolet;
+    color:rgb(251, 251, 251);
+    padding: 1rem 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    font-weight: bold;
+    border: none;
+    width: 90%;
+    max-width: 250px;
+
+}
+
+.error{
+    background-color: red;
+    padding: 1rem .5rem;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.correct{
+    background-color: green;
+    padding: 1rem .5rem;
+    text-align: center;
+    color: var(--blanco);
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio</title>
+        
+</head>
+<body>
+    <header>
+        <img class="logo" src="./imagen/ENRIQUE GARCÍA (11).png" alt="">
+        <button class="abrir-menu" id="abrir"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="40" height="40" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 6l16 0" />
+            <path d="M4 12l16 0" />
+            <path d="M4 18l16 0" />
+            </svg>
+        </button>
+        <nav class="Navegacion" id="nav">
+            <button class="cerrar-menu" id="cerrar"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="40" height="40" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+                </svg>
+            </button>
+            <ul class="nav-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./proyects.html">Proyects</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav> 
+   </header> 
+    
+   <div class="contacto-bg"></div>
+
+    <form class="formulario">
+
+       
+
+        <div class="campo">
+            <label class="campo__label" for="nombre">Nombre</label>
+            <input 
+                class="campo__field"
+                type="text" 
+                placeholder="Tu Nombre" 
+                id="nombre"
+            >
+        </div>
+    
+        <div class="campo">
+            <label class="campo__label" for="email">E-mail</label>
+            <input 
+                class="campo__field"
+                type="email" 
+                placeholder="Tu E-mail" 
+                id="email"
+            >
+        </div>
+    
+        <div class="campo">
+            <label class="campo__label" for="mensaje">Mensaje</label>
+            <textarea 
+                class="campo__field campo__field--textarea"
+                id="mensaje"
+            ></textarea>
+        </div>
+    
+        <div class="campo">
+            <input type="submit" value="Enviar" class="boton boton--primario">
+        </div>
+            
+    </form>
+    
+    
+    
+        
+</body>
+<script src="./js/mordernizr.js"></script>    
+<script src="./js/script1.js"></script>
+<script src="./js/hamburg.js"></script>    
+
+</html>

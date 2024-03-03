@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=EB+Garamond&family=Inter&family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+     <header>
+          <img class="logo" src="./imagen/ENRIQUE GARCÍA (11).png" alt="">
+          <button class="abrir-menu" id="abrir"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="40" height="40" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M4 6l16 0" />
+              <path d="M4 12l16 0" />
+              <path d="M4 18l16 0" />
+              </svg>
+          </button>
+          <nav class="Navegacion" id="nav">
+              <button class="cerrar-menu" id="cerrar"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="40" height="40" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+                  </svg>
+              </button>
+              <ul class="nav-list">
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="#">Proyects</a></li>
+                  <li><a href="./skills.html">Skills</a></li>
+                  <li><a href="./contacto.html">Contact</a></li>
+              </ul>
+          </nav> 
+     </header> 
+   <section class="proyectos">
+
+          <h2>PROYECTS:</h2>
+          <div class="swiper mySwiper">
+               <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                         <img src="./imagen/proyecto2.png">
+                    </div>
+                    <div class="swiper-slide">
+                         <img src="./imagen/proyecto1.png">
+                    </div>
+                    <div class="swiper-slide">
+                         <img src="./imagen/proyecto3.png">
+                    </div>
+                    <div class="swiper-slide">
+                         <img src="./imagen/proecto4.png">
+                    </div>
+                    <div class="swiper-slide">
+                         <img src="./imagen/proyecto5.png">
+                    </div>
+               </div>
+          </div>
+          <div class="github">
+               <a href="https://github.com/dashboard">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                         <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                    </svg>
+                    
+               </a>
+          </div>
+   </section>
+   
+   
+   
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> 
+   <script src="./js/scripts.js"></script>
+   <script src="./js/hamburg.js"></script>
+</body>
+</html>
